@@ -114,8 +114,13 @@
 
 // Header Extended Navigation
 .header-extendednavigation {
-  text-align: right;
+    text-align: right;
+    display: inline-block;
+    float: right;
+    width: 50%;
+    margin-top: 30px;
 }
+
 // Folder Item Parent: Gives arrow
 .item-name--parent:after {
     display: inline-block;
@@ -134,9 +139,45 @@
 }
 
 
+
+
 // -----------------------------
 // 4.  #Feature
 // -----------------------------
+
+.featurecontainer {
+    width: 100%;
+    .feature__background-image {
+        height: 500px;
+    }
+    .feature__content-wrap {
+        text-align: center;
+    }
+    .feature__headline {
+        max-width: 90%;
+        margin: 0px auto;
+        color: white;
+    }
+    .feature__strapline {
+        max-width: 90%;
+        margin: 0px auto;
+        color: white;
+    }
+}
+
+.feature-left-container {
+    text-align: right;
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.feature-right-container {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
 
 // Feature Overlay
 .feature-overlay {
@@ -178,7 +219,7 @@
 .feature__content-wrap {
     display: table-cell;
     padding: 30px 40px;
-    text-align: left;
+    text-align: right;
     vertical-align: middle;
     @media @tablet {
         text-align: center;
@@ -194,7 +235,6 @@
 
 // Feature Headline
 .feature__headline {
-    max-width: 65%;
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
         line-height: bkscale(@font-swatch8-line-height,0.6);
@@ -209,7 +249,6 @@
 
 // Feature Strapline
 .feature__strapline {
-    max-width: 65%;
     @media @tablet {
         font-size: bkscale(@font-swatch9-font-size,0.9);
         line-height: bkscale(@font-swatch9-line-height,0.8);

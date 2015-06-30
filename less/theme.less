@@ -25,9 +25,10 @@
 
 .logo-companyname {
     text-align: center;
-    @media @tablet {
-        margin-bottom: 20px;
-    }
+    text-align: left;
+    display: inline-block;
+    float: left;
+    width: 50%;
 }
 
 .header-textwidget {
@@ -38,7 +39,7 @@
 }
 
 .logo-header.container {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .template-header {
@@ -61,20 +62,24 @@
 }
 
 .fixed-header-wrap {
-    position: relative;
+    position: absolute;
     z-index: 999;
+    width: 100%;
 }
 
 @media only screen and (min-width:860px) {
     .fixed-header.shrink {
-        min-height: 14%;
+        min-height: 8%;
         position: fixed;
         z-index: 9998;
         top: 0;
         left: 0;
-
+        background-color: fade(@color-swatch4,20%);
+        .header-extendednavigation {
+            margin-top: 0;
+        }
         .container {
-            padding: 10px 0 30px 0;
+            padding: 0;
         }
 
         .company-link {
@@ -112,6 +117,11 @@
     transition: all 2;
     height: 1px;
     opacity: 0;
+}
+
+.navigation-container {
+    width: 50%;
+    float: right;
 }
 
 // Footer
