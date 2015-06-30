@@ -1,0 +1,157 @@
+{
+    "name":"Skate",
+    "thumbnail":"skate.png",
+    "screenshot":"skate.png",
+    "tags": {
+        "en": ["shopping", "ecommerce", "business", "store", "boutique", "professional", "minimal", "clean", "simple"],
+        "es": ["compras", "ecommerce", "negocios", "tienda", "boutique", "profesional", "minimalista", "limpio", "simple"],
+        "pt": ["compras", "ecommerce", "negócio", "loja", "boutique", "profissional", "minimalista", "limpo", "simples"]
+    },
+    "pageTypes":["home"],
+    "templateType":"ecommerce",
+    "widgetVersion":2,
+    "images":[
+        "images/slideshow/slideshow-1.jpg",
+        "images/slideshow/slideshow-2.jpg",
+        "images/slideshow/slideshow-3.jpg",
+        "images/logo.jpg",
+        "images/feature-img1.jpg",
+        "images/feature-img2.jpg"
+    ],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#ca1414",
+            "color3":"#d40707",
+            "color4":"#000000",
+            "color5":"#2b3040",
+            "color6":"#FFFFFF",
+            "color7":"#FFFFFF"
+        },
+        "Swatch 2": {
+            "color1":"#FFFFFF",
+            "color2":"#322345",
+            "color3":"#322345",
+            "color4":"#322345",
+            "color5":"#888888",
+            "color6":"#FFFFFF",
+            "color7":"#FFFFFF"
+        },
+        "Swatch 3": {
+            "color1":"#FFFFFF",
+            "color2":"#5FD040",
+            "color3":"#5FD040",
+            "color4":"#4F7391",
+            "color5":"#888888",
+            "color6":"#FFFFFF",
+            "color7":"#FFFFFF"
+        },
+        "Swatch 4": {
+            "color1":"#FFFFFF",
+            "color2":"#6FA1ED",
+            "color3":"#6FA1ED",
+            "color4":"#000000",
+            "color5":"#888888",
+            "color6":"#FFFFFF",
+            "color7":"#FFFFFF"
+        },
+        "Swatch 5": {
+            "color1":"#FFFFFF",
+            "color2":"#4BA5A1",
+            "color3":"#4BA5A1",
+            "color4":"#2B7774",
+            "color5":"#888888",
+            "color6":"#FFFFFF",
+            "color7":"#FFFFFF"
+        }
+    },
+    "fontSwatch": {
+       "title": "Roboto Slab, Georgia, serif",
+        "font1": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "26px",
+            "font-weight": "300",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "2px"
+        },
+        "font2": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "24px",
+            "font-weight": "300",
+            "line-height": "32px",
+            "color": "@color-swatch4",
+            "letter-spacing": "2px"
+        },
+        "font3": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "22px",
+            "font-weight": "300",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "2px"
+        },
+        "font4": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "18px",
+            "font-weight": "300",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "15px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "color-hover": "@color-swatch4",
+            "letter-spacing": "2px",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+         },
+        "font7": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "14px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch1",
+            "letter-spacing": "2px",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font8": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "26px",
+            "font-weight": "300",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "3px"
+        },
+        "font9": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "14px",
+            "font-weight": "300",
+            "line-height": "22px",
+            "color": "@color-swatch4",
+            "letter-spacing": "3px"
+        },
+        "font10": {
+            "font-family": "\"Roboto Slab\", Georgia, serif",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "3px"
+        }
+    }
+}

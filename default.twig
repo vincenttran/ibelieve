@@ -1,0 +1,49 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<div class="fixed-header-wrap">
+    <div class="fixed-header">
+        <div class="logo-header container">
+            <div class="logo-companyname">
+                    <span class="resize-logo">{{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.jpg')})|raw}}</span>
+                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                <div class="header-extendednavigation">
+                    {{widget('extendednavigation', 'extendednavigation', {})|raw}}
+                </div>
+            </div>
+        </div>
+        <div class="header-line">
+        </div>
+    </div>
+</div>
+
+<div class="bk-pt-default">
+
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Page Content -->
+		<section class="template-content">
+
+			<!-- Template Widgets -->
+
+			<!-- End Template Widgets -->
+
+			<!-- Main Widet Zone -->
+		   	{{zone('main')|raw}}
+
+		</section>
+		<!-- End Page Content -->
+
+	</div>
+	<!-- End Container -->
+
+</div>
+<!-- End bk-pt-default -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

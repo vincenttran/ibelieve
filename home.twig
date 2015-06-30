@@ -1,0 +1,75 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<div class="fixed-header-wrap">
+    <div class="fixed-header">
+        <div class="logo-header container">
+            <div class="logo-companyname">
+                    <span class="resize-logo">{{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.jpg')})|raw}}</span>
+                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                <div class="header-extendednavigation">
+                    {{widget('extendednavigation', 'extendednavigation', {})|raw}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container -->
+
+<!-- Homepage Feature -->
+{{widget('feature', 'featurehome', {
+    "header": "profile",
+    "defaultBgImg": asset('images/feature-bg.jpg'),
+    'positionTopPercentage': '0',
+    'showBtn': true,
+    buttonText: "Lorem Ipsum"
+})|raw}}
+<!-- End Homepage Feature -->
+
+
+        <div class="feature-container clearfix">
+            <div class="feature-left-container">
+                {{widget('feature', 'feature-right', {
+                    "header": "profile",
+                    "strapline": "profile",
+                    "defaultBgImg": asset('images/feature-img1.jpg'),
+                    "positionTopPercentage": "50",
+                    "showBtn": true,
+                    "buttonText": "Lorem Ipsum"
+                })|raw}}
+            </div>
+        </div>
+
+                <div class="feature-container clearfix">
+            <div class="feature-right-container">
+                {{widget('feature', 'feature-right', {
+                    "header": "profile",
+                    "strapline": "profile",
+                    "defaultBgImg": asset('images/feature-img2.jpg'),
+                    "positionTopPercentage": "50",
+                    "showBtn": true,
+                    "buttonText": "Lorem Ipsum"
+                })|raw}}
+            </div>
+        </div>
+
+    	<!-- Page Content -->
+    	<section class="template-content">
+
+    		<!-- Main Widet Zone -->
+    	   	{{zone('main')|raw}}
+
+    	</section>
+    	<!-- End Page Content -->
+
+    </div>
+    <!-- End Container -->
+</div>
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

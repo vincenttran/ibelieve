@@ -1,2 +1,4 @@
-# ibelieve
-Freelance Ecommerce Clothing Website
+Skate
+=========
+
+BaseKit eCommerce Template

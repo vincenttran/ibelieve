@@ -1,0 +1,370 @@
+// ---------------------------------
+// Apparel: CSS > Template Theme
+// ---------------------------------
+
+// 1. #HEADER, PROFILE HEADER & FOOTER
+// 2. #TYPOGRAPHY
+// 3. #FORMS
+// 4. #BUTTONS
+// 5. #IMAGES
+
+
+
+
+// -----------------------------
+// 1. #Header, Profile Header & Footer
+// -----------------------------
+
+.template-header,
+.template-footer {
+	.flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
+	min-height: 30px;
+	background-color: @color-swatch4;
+	// Tablet: reduce height
+}
+
+.logo-companyname {
+    text-align: center;
+    @media @tablet {
+        margin-bottom: 20px;
+    }
+}
+
+.header-textwidget {
+    p, h1, h2, h3, h4 {
+        color: @font-swatch7-color;
+        margin-top: 10px;
+    }
+}
+
+.logo-header.container {
+    padding-top: 40px;
+}
+
+.template-header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.fixed-header {
+    width: 100%;
+    -webkit-transition: min-height 0.6s;
+    -moz-transition: min-height 0.6s;
+    -ms-transition: min-height 0.6s;
+    -o-transition: min-height 0.6s;
+    transition: min-height 0.6s;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 9998;
+    min-height: 28%; 
+}
+
+.fixed-header-wrap {
+    position: relative;
+    z-index: 999;
+}
+
+@media only screen and (min-width:860px) {
+    .fixed-header.shrink {
+        min-height: 14%;
+        position: fixed;
+        z-index: 9998;
+        top: 0;
+        left: 0;
+
+        .container {
+            padding: 10px 0 30px 0;
+        }
+
+        .company-link {
+            font-size: bkscale(@font-swatch10-font-size,.8);
+            line-height:bkscale(@font-swatch10-line-height,.8);
+            -webkit-transition: all 0.6s;
+            -moz-transition: all 0.6s;
+            transition: all 0.6s;
+        }
+
+        .navigation-item .item-name {
+            font-size: bkscale(@font-swatch6-font-size,.8);
+            line-height:bkscale(@font-swatch6-line-height,.8);
+            -webkit-transition: all 0.6s;
+            -moz-transition: all 0.6s;
+            transition: all 0.6s;
+        }
+
+        .companyname {
+            margin: 0;
+        }
+    }
+}
+
+.fixed-header .logo-image {
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    transition: all 2s;
+    height: auto;
+}
+
+.fixed-header.shrink .logo-image {
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    transition: all 2;
+    height: 1px;
+    opacity: 0;
+}
+
+// Footer
+// ------
+
+.template-footer {
+	text-align: center;
+	color: @font-swatch9-color;
+	// Change heading elements to white
+	h1, h2, h3, h4 {
+		color: @font-swatch7-color;
+	}
+	// Lighten paragraph & link elements
+	p, a {
+		color: @font-swatch7-color;
+		padding: 0;
+	}
+    .container {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+
+
+
+// -----------------------------
+// 2. #Typography
+// -----------------------------
+
+// Colour Swatches
+// ---------------
+
+// @color-swatch1: Background
+// @color-swatch2: Contrast
+// @color-swatch3: Buttons
+// @color-swatch4: Headings
+// @color-swatch5: Paragraph
+// @color-swatch6: Navigation Links
+// @color-swatch7: Spare
+
+
+// Font Swatches
+// -------------
+
+// font1:  Heading 1
+// font2:  Heading 2
+// font3:  Heading 3
+// font4:  Heading 4
+// font5:  Paragraph
+// font6:  Navigation Link
+// font7:  Buttons
+// font8:  Feature Headline
+// font9:  Feature Strapline
+// font10: Company Name (Logo)
+
+
+// Standard Text Link
+// ------------------
+
+a {
+    color: @color-swatch2;
+}
+
+
+// Blockquote
+// ----------
+
+blockquote:before {
+	margin-right: 10px;
+	font-size: 32px;
+	color: @color-swatch3;
+}
+
+
+
+
+// -----------------------------
+// 3. #Forms
+// -----------------------------
+
+// Form
+// ----------
+
+form, .form {
+    background-color: @color-swatch7;
+    position: relative;
+    border: 1px solid darken(@color-swatch1,10%);
+    width: 100%;
+    margin: 20px auto 0;
+    &:before {
+        content: '\2605';
+        color: @font-swatch4-color;
+        position: absolute;
+        top: -16px;
+        margin-left: -2px;
+        background-color: @color-swatch1;
+        width: 16px;
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+    }
+    @media @tablet {
+        text-align: center;
+    }
+    @media @mobile {
+        padding: 0;
+    }
+}
+
+// Form Body
+.form-body {
+	margin: 10px 0 20px;
+    position: relative;
+	@media @mobile {
+		margin: 20px;
+	}
+}
+
+// Form Group
+.form-group {
+	margin-bottom: 20px;
+	@media @mobile {
+		margin-bottom: 10px;
+	}
+}
+
+
+// Legend
+// ----------
+
+legend {
+	width: 100%;
+	padding: 30px 30px;
+	color: @font-swatch4-color;
+	@media @mobile {
+		padding: 6px 20px;
+	}
+}
+
+// Select
+// ----------
+
+select {
+    height: 36px;
+    outline: none;
+    border: 1px solid darken(@color-swatch1,10%);
+    border-radius: 0;
+    background-color: @color-swatch1;
+    font-size: 12px;
+    text-indent: 0;
+    &:hover, &:focus {
+        background-color: @color-swatch1;
+        cursor: pointer;
+	}
+}
+
+.signupform__legend {
+    display: none;
+}
+
+// Inputs: Text
+// ------------
+
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+.input--single-line {
+    border: 0;
+    -webkit-appearance: none;
+    background-color: @color-swatch1;
+    border-radius: 0;
+    border-bottom: 1px solid darken(@color-swatch7,8%);
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        border-bottom: 1px solid darken(@color-swatch1,20%);
+    }
+}
+
+.signupform__label,
+.contactform__legend,
+.blogsearch__legend {
+    border-bottom: 0;
+    text-align: center;
+    font-size: @font-swatch1-font-size;
+    font-weight: @font-swatch1-font-weight;
+    padding: 30px 0 0;
+}
+
+.signupform__label {
+   padding: 30px 0 10px;
+}
+
+.signupform__input {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    .button--submit {
+        display: inline-block;
+        float: right;
+        min-width: 20%;
+        vertical-align: bottom;
+        margin-top: 21px;
+    }
+}
+
+.signupform__form-group {
+    .clearfix
+}
+
+
+
+
+// -----------------------------
+// 4. #Buttons
+// -----------------------------
+
+button,
+.button,
+.blogpostlist__read-more {
+    padding: 8px 20px;
+    background-color: @color-swatch4;
+    color: @font-swatch7-color;
+    /*.transition (all,0.3s, ease-in-out);
+
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);*/
+}
+
+
+
+
+// -----------------------------
+// 5. #Images
+// -----------------------------
+
+// Image Captions
+// --------------
+
+// Gallery & Slideshow
+.image-title,
+.image-description {
+	color: @color-swatch1;
+}
+
+// Image Widget
+.image-widget__caption { margin: 10px 0; }
+.image-widget__image-title,
+.image-widget__image-description {
+	color: @font-swatch5-color;
+	text-shadow: none;
+}
