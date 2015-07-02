@@ -229,6 +229,11 @@
     }
 }
 
+.feature__content-inner-wrap {
+    max-width: 40%;
+    float: right;
+}
+
 
 // Feature Content
 // ---------------
@@ -268,11 +273,6 @@
 .feature__button { 
     margin: 10px 0 0 0;
     background-color: @color-swatch2;
-    &:after {
-        content:"\f054";
-        color: darken(@color-swatch2,10%);
-        padding: 0 0 0 10px;
-    }
     &:hover {
         background-color: darken(@color-swatch2,10%);
         &:after {
