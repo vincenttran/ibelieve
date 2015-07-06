@@ -34,6 +34,10 @@
 // 15.   #YELP
 // 16.   #MAP
 
+.bk-pt-default .container {
+    padding-top: 220px;
+}
+
 
 // -----------------------------
 // 1.  #Logo
@@ -170,6 +174,9 @@
     display: inline-block;
     float: left;
     width: 50%;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 .feature-right-container {
@@ -177,6 +184,9 @@
     display: inline-block;
     float: right;
     width: 50%;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 // Feature Overlay
@@ -230,7 +240,7 @@
 }
 
 .feature__content-inner-wrap {
-    max-width: 40%;
+    max-width: 60%;
     float: right;
 }
 
