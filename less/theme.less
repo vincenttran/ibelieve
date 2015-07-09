@@ -28,7 +28,10 @@
     text-align: left;
     display: inline-block;
     float: left;
-    width: 50%;
+    width: 25%;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 .header-textwidget {
@@ -38,11 +41,10 @@
     }
 }
 
-.logo-header.container {
-    padding-top: 20px;
-    max-width: 2400px;
+.logo-header {
+    padding: 0 2%;
     @media @tablet {
-        padding-top: 0;
+        padding: 0;
     }
 }
 

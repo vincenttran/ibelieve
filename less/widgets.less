@@ -48,6 +48,7 @@
     text-align: left;
     @media @tablet {
         margin-right: 0;
+        text-align: center;
     }
 }
 
@@ -114,8 +115,12 @@
     text-align: right;
     display: inline-block;
     float: right;
-    width: 50%;
+    width: 75%;
     margin-top: 30px;
+    @media @tablet {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
 // Folder Item Parent: Gives arrow
@@ -255,7 +260,7 @@
 .feature__headline {
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
-        line-height: bkscale(@font-swatch8-line-height,0.6);
+        line-height: bkscale(@font-swatch8-line-height,0.8);
         max-width: 100%;
     }
     @media @mobile {
@@ -269,12 +274,12 @@
 .feature__strapline {
     @media @tablet {
         font-size: bkscale(@font-swatch9-font-size,0.9);
-        line-height: bkscale(@font-swatch9-line-height,0.8);
+        line-height: bkscale(@font-swatch9-line-height,0.9);
         max-width: 100%;
     }
     @media @mobile {
         font-size: bkscale(@font-swatch9-font-size,0.8);
-        line-height: bkscale(@font-swatch9-line-height,0.7);
+        line-height: bkscale(@font-swatch9-line-height,0.8);
         max-width: 100%;
     }
 }
