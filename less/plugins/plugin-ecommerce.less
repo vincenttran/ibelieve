@@ -231,18 +231,25 @@
 // Product Item
 .product-item {
     position: relative;
-    width: 33%;
+    width: 25%;
     margin-bottom: 2%;
     background-color: @color-swatch7;
     padding: 20px;
     // Display 100% at mobile
     @media @tablet {
         width: 50%;
+        padding: 0 20px;
     }
     @media @mobile {
         width: 100%;
         margin-bottom: 0;
     }
+}
+
+.container-zone {
+    @media @tablet {
+        padding: 0;
+    }  
 }
 
 .product-item-image .image-link {
@@ -341,6 +348,7 @@
 
 .ecomfeaturedproducts__listing-header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .ecomfeaturedproducts__product-content {
@@ -357,7 +365,13 @@
     margin-top: 20px;
 }
 
+.bk-pt-default .widget__ecomcategorieslist {
+    padding-top: 0px;
+}
 
+.widget__ecomcategorieslist {
+    padding-top: 40px;
+}
 
 
 // -----------------------------
