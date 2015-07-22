@@ -133,7 +133,7 @@
             "font-family": "\"Roboto Slab\", Georgia, serif",
             "font-size": "26px",
             "font-weight": "300",
-            "line-height": "34px",
+            "line-height": "44px",
             "color": "@color-swatch4",
             "letter-spacing": "3px"
         },
